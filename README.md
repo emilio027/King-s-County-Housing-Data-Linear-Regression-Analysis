@@ -1,6 +1,6 @@
 # King's County Housing Data Linear Regression Analysis 
 
-![Kings County Map](kc_map.png)
+![Kings County Map](Pictures/kc_map.png)
 
 The aim of this experiment in linear regression is to assess the fluctuation of prices of homes in Kings County, Seattle for a private equity firm focusing on real estate acquisitions. The manipulation of the homes' variables such as square feet, waterfronts, and other architectural features affect the over total worth of the home and it is the intention of these linear models to explain the value of the home. 
 
@@ -66,17 +66,17 @@ The baseline model included data from all of the homes sold across Kings County,
 
 The following graphic depicts the early correlation between price and square feet
 
-![M1sq](modelprice.png)
+![M1sq](Pictures/modelprice.png)
 
 It is when we look at the linearity of the model that we appreciate the short comings of its predictive prower
 
-![model1_lin](model1.png)
+![model1_lin](Pictures/model1.png)
 
 ## Model 2
 
 The second model was carried out using data after a logarithmic or Log-Level Regression was made on the price value as it is the dependent variable or determining outcome we are after.  
 
-![Model_r](model2_r.png)
+![Model_r](Pictures/model2_r.png)
 
 The 'R-squared' value depicts the percentage of uncerntatiy that the data used reflects the outcomes of this model
 The error below depicts the errors made while calculating the values from the same data set split into 80/20 percent between the "train" data and the "test" data
@@ -90,22 +90,22 @@ This number reflects the possible error from the actual home price of the underl
 
 The Price to variable realtionship did, however, conciderally increase
 
-![model2_lin](model2.png)
+![model2_lin](Pictures/model2.png)
 
 ## Model 3
 
 The third model was performed under the same cirmustances as the second model with the exception that home prices were kept under two-million dollars and the number of bedrooms per home was six or less.
 
-![model3_r](model3_r.png)
-![model3_var](model3_var.png)
-![model3_price](model3_price.png)
+![model3_r](Pictures/model3_r.png)
+![model3_var](Pictures/model3_var.png)
+![model3_price](Pictures/model3_price.png)
 
 
 
 **Train: 157,669.94\
 Test: 153,145.46**
 
-![bedrooms](finalmodelpng.png)
+![bedrooms](Pictures/finalmodelpng.png)
 
 The final model depicts a complex relationship between price and the underlying features of the home. The most correlated asset was the of square foot per home with the a positive correlation between price and increase of area. 
 
@@ -122,12 +122,3 @@ This is known as a log-level model and the interpretation is that a unit increas
 This would mean that a year increase in bedrooms is associated with a roughly 100*b% increase in price (log_price).
 
 
-
-
-```python
-
-```
-
-# Command to convert jupyter notebook to markdown file
-
-jupyter nbconvert --to markdown README.ipynb
